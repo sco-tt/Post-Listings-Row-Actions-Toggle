@@ -10,3 +10,6 @@
 .show-actions-trigger a {
     color: #555;
 }
+.show-actions-trigger a:focus {
+    box-shadow: none;
+}
