@@ -1,0 +1,12 @@
+.row-actions {
+    left: 0;
+}
+.hide-row-actions {
+    display: none;
+}
+.show-actions-trigger {
+    color: #fff;
+}
+.show-actions-trigger a {
+    color: #555;
+}
