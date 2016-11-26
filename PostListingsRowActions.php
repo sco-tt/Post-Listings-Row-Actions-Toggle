@@ -21,8 +21,8 @@ class PostListingsRowActions {
 	 */
 	function __construct() {
 		add_action( 'admin_enqueue_scripts', array( $this, 'register_assets' ) );
-        add_filter( 'post_row_actions', array( $this, 'add_quicklinks_link'), 10, 2);
-        add_filter( 'page_row_actions', array( $this, 'add_quicklinks_link'), 10, 2);
+    add_filter( 'post_row_actions', array( $this, 'add_quicklinks_link'), 10, 2);
+    add_filter( 'page_row_actions', array( $this, 'add_quicklinks_link'), 10, 2);
 	}
 
 	/*
@@ -30,9 +30,9 @@ class PostListingsRowActions {
 	 */
 	public function register_assets() {
 		wp_register_style( 'row-actions', plugin_dir_url( __FILE__ ) . 'styles/row-actions.css', false, 1.0 );
-        wp_register_script( 'row-actions', plugin_dir_url( __FILE__ ) . 'assets/js/row-actions.js', array('jquery'), 1.0, true );
-		wp_enqueue_style('row-actions');
-        wp_enqueue_script('row-actions');
+    wp_register_script( 'row-actions', plugin_dir_url( __FILE__ ) . 'assets/js/row-actions.js', array('jquery'), 1.0, true );
+    wp_enqueue_style('row-actions');
+    wp_enqueue_script('row-actions');
 	}
 
 	public function add_quicklinks_link ( $actions ) {
